@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>CarSecure</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" 
+        type="text/javascript">
+    </script>
+      <script src="js/home.js"></script>
+</head>
+
+<body>
+    <div class="applicationWrapper">
+        <h1 class="logo">Car Secure</h1>
+        <div class="tile">
+            <h1>Notification Center</h1>
+            <div class="catagory">
+                Moisture?
+                <div id="waterOut">
+                    <img  id="water" class="outputImage"  src="media/good.png">
+                </div>
+            </div>
+            <div class="catagory">
+                Motion?
+                <div id="motionOut"></div>
+                    <img id="action" class="outputImage" src="media/good.png">
+                </div>
+            </div>
+            <div class="tile">
+                <h1>Front Camera</h1>
+                <iframe src="http://192.168.2.110/picture/1/frame/" width="640" height="360"></iframe>
+            </div>
+            <div class="tile">
+                <h1>Rear Camera</h1>
+                <iframe src="http://192.168.2.238/picture/1/frame/" width="640" height="360"></iframe>
+            </div>
+    </div>
+</body>
+</html>
